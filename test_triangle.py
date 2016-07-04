@@ -195,7 +195,7 @@ class TriangleTest(unittest.TestCase):
     #
     # tests incorrect parameters number
     def test_incorrect_parameters_number(self):
-        values=['3 4 5 6']
+        values=['','3','3 4','3 4 5 6']
         for i in values:
             with self.subTest('args={0}'.format(i)):
                 self.triangle.run_console(i,5)
